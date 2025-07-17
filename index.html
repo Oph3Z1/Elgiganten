@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elgiganten</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="header-wrapper">
+            <img class="logo" src="./img/logo.png">
+            <div class="menu">
+                <img src="./img/menu-icon.png" class="menu-icon" id="menuIcon">
+                <p>Meny</p>
+                <img src="./img/logo.png" style="display: none;" class="phone-logo">
+            </div>
+            <div class="search-input">
+                <input type="text" class="search-input" placeholder="Sök efter produkter, kategori eller artikel">
+                <img src="./img/search-icon.png">
+            </div>
+            <div class="header-buttons">
+                <a>
+                    <img src="./img/location-icon.png">
+                    <p style="width: 70px;">Hitta butik</p>
+                </a>
+                <a href="./login.html">
+                    <img src="./img/login-icon.png">
+                    <p>Logga in</p>
+                </a>
+                <a>
+                    <img src="./img/shopping-cart-icon.png">
+                    <p>Kundvagn</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="category">
+        <div id="category-item">
+            <img style="width: 64px; height: 64px;" src="./img/category/outlet.avif">
+            <p>Outlet</p>
+        </div>
+        <div id="category-item">
+            <img style="width: 64px; height: 64px;" src="./img/category/datorer.avif">
+            <p style="width: 56%;">Datorer & kontor</p>
+        </div>
+        <div id="category-item">
+            <img style="width: 64px; height: 64px;" src="./img/category/vitvaror.avif">
+            <p>Vitvaror</p>
+        </div>
+        <div id="category-item">
+            <img style="width: 64px; height: 64px;" src="./img/category/tv.avif">
+            <p style="width: 86%;">Tv, ljud & smart hem</p>
+        </div>
+        <div id="category-item">
+            <img style="width: 64px; height: 64px;" src="./img/category/mobil.avif">
+            <p style="width: 90%;">Mobiler, tablets & smartklockor</p>
+        </div>
+        <div id="category-item">
+            <img style="width: 64px; height: 64px;" src="./img/category/gaming.avif">
+            <p>Gaming</p>
+        </div>
+        <div id="category-item">
+            <img style="width: 64px; height: 64px;" src="./img/category/hem.avif">
+            <p style="width: 77%;">Hem, hushåll & trädgård</p>
+        </div>
+        <div id="category-item">
+            <img style="width: 64px; height: 64px;" src="./img/category/personvård.avif">
+            <p style="width: 88%;">Personvård, hälsa & skönhet</p>
+        </div>
+        <div id="category-item">
+            <img style="width: 64px; height: 64px;" src="./img/category/kök.avif">
+            <p style="width: 60%;">EPOQ kök & tvättstuga</p>
+        </div>
+        <div id="category-item">
+            <img style="width: 64px; height: 64px;" src="./img/category/tjänster.avif">
+            <p>Tjänster</p>
+        </div>
+        <div id="category-item">
+            <img style="width: 64px; height: 64px;" src="./img/category/rea.avif">
+            <p>Rea</p>
+        </div>
+    </div>
+    <div id="banner">
+        <img id="BannerIMG" style="width: 100%; height: 100%; position: absolute;" src="./img/banner/1.avif">
+        <img id="LeftArrow" onclick="PrevImage()" style="left: 1rem;" src="./img/left-arrow.png">
+        <img id="RightArrow" onclick="NextImage()" style="right: 1rem;" src="./img/right-arrow.png">
+    </div>
+    <div class="thumbnail">
+        <div class="thumbnail-wrapper">
+            <div class="tw-item">
+                <img src="./img/thumbnail/1.avif">
+            </div>
+            <div class="tw-item">
+                <img src="./img/thumbnail/2.avif">
+            </div>
+            <div class="tw-item">
+                <img src="./img/thumbnail/3.avif">
+            </div>
+            <div class="tw-item">
+                <img src="./img/thumbnail/4.avif">
+            </div>
+        </div>
+    </div>
+    <div class="benefit-bar">
+        <div>
+            <h3>Flexibla</h3>
+            <p>Leveranser som passar dig</p>
+        </div>
+        <div>
+            <h3>Boka & hämta</h3>
+            <p class="bb-longtext">Redo i eller utanför butik inom 30 min</p>
+        </div>
+        <div>
+            <h3>50 dagar</h3>
+            <p>Öppet köp för medlemmar</p>
+        </div>
+        <div>
+            <h3>Samma pris</h3>
+            <p>Online & i butik</p>
+        </div>
+        <div>
+            <h3>Prismatch</h3>
+            <p>Mot alla i Sverige</p>
+        </div>
+        <div>
+            <h3>Fråga Oss!</h3>
+            <p class="bb-longtext2">Vi hjälper dig att hitta rätt lösning</p>
+        </div>
+    </div>
+    <div class="large-banner">
+        <div class="lb-container">
+            <div class="lb-wrapper"></div>
+            <div class="lbw-scroll-right" style="right: .8333vw;">
+                <img src="./img/arrow-down.svg" style="transform: rotate(-90deg);">
+            </div>
+            <div class="lbw-scroll-left" style="left: .8333vw;">
+                <img src="./img/arrow-down.svg" style="transform: rotate(90deg); margin-right: .2rem;">
+            </div>
+        </div>
+    </div>
+    <div class="information-container">
+        <div>
+            <img src="./img/basket-icon.svg" />
+            <span>Boka & Hämta inom 30 min</span>
+        </div>
+        <div>
+            <img src="./img/open-purchase.svg" />
+            <span>50 dagars öppet köp för klubbmedlemmar</span>
+        </div>
+        <div>
+            <img src="./img/price-match.svg" />
+            <span>Prismatch</span>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="f-company">
+            <img src="./img/white-logo.svg" />
+            <span>©2024 Elgiganten AB. All rights reserved. Organisationsnummer: 556471-4474.</span>
+        </div>
+        <ul class="f-list">
+            <li class="li-header">Kundtjänst</li>
+            </br>
+            <li>Kundtjänst</li>
+            <li>Hitta butik/varuhus</li>
+            <li>Spåra din leverans</li>
+            <li>Support via fjärrhjälp</li>
+            <li>Bluffmail m.m.</li>
+            <li>Kontakta oss</li>
+        </ul>
+        <ul class="f-list">
+            <li class="li-header">Inforamtion</li>
+            </br>
+            <li>Leverans- och installationsavtal</li>
+            <li>Cookies på Elgiganten</li>
+            <li>Marketpalce</li>
+            <li>Personuppgiftspolicy</li>
+            <li>Visselblåsning</li>
+        </ul>
+        <ul class="f-list">
+            <li class="li-header">Inspiration</li>
+            </br>
+            <li>Kampanjer</li>
+            <li>Guider & inspiration</li>
+            <li>Black Friday 2025</li>
+            <li>Mellandagrea 2025</li>
+        </ul>
+        <ul class="f-list">
+            <li class="li-header">Om Elgiganten</li>
+            </br>
+            <li>Om Elkjøp Nordic</li>
+            <li>Ledningsgrupp</li>
+            <li>Jobba hos oss</li>
+            <li>Elgiganten foundation</li>
+            <li>Elgiganten Företag</li>
+            <li>Kundklubb</li>
+            <li>Pressrum</li>
+            <li>Hållbarhet</li>
+        </ul>
+    </div>
+    <div class="dropdown-menu" style="display: none;">
+        <span class="dm-header">Meny</span>
+        <div id="dm-content">
+            <div>
+                <img src="./img/second-category/dator.avif" />
+                <span style="margin-left: 12px; font-size: 15px;">Datorer & Kontor</span>
+            </div>
+            <img style="filter: invert(1) !important;" src="./img/right-arrow.png" />
+        </div>
+        <div id="dm-content" style="margin-top: 18px;">
+            <div>
+                <img src="./img/second-category/mobil.avif" />
+                <span style="margin-left: 12px; font-size: 15px;">Mobiler, Tablets & Smartklockor</span>
+            </div>
+            <img style="filter: invert(1) !important;" src="./img/right-arrow.png" />
+        </div>
+        <div id="dm-content" style="margin-top: 18px;">
+            <div>
+                <img src="./img/second-category/tv.avif" />
+                <span style="margin-left: 12px; font-size: 15px;">TV, Ljud & Smart Hem</span>
+            </div>
+            <img style="filter: invert(1) !important;" src="./img/right-arrow.png" />
+        </div>
+        <div id="dm-content" style="margin-top: 18px;">
+            <div>
+                <img src="./img/second-category/gaming.avif" />
+                <span style="margin-left: 12px; font-size: 15px;">Gaming</span>
+            </div>
+            <img style="filter: invert(1) !important;" src="./img/right-arrow.png" />
+        </div>
+        <div id="dm-content" style="margin-top: 18px; margin-bottom: 18px;">
+            <div>
+                <img src="./img/second-category/dator-komponenter.avif" />
+                <span style="margin-left: 12px; font-size: 15px;">Datorkomponenter</span>
+            </div>
+            <img style="filter: invert(1) !important;" src="./img/right-arrow.png" />
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
